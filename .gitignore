@@ -56,3 +56,4 @@ docs/_build/
 target/
 
 # Author Specific
+*.DS_Store
