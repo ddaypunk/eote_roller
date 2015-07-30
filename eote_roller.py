@@ -117,6 +117,17 @@ def calc_result(roll_results_list):
 	total_white = 0
 	total_black = 0
 
+	# these only need to be created if there is a net so they can be moved
+	net_success = 0
+	net_advantage = 0
+	net_triumph = 0
+	net_failure = 0
+	net_threat = 0
+	net_despair = 0
+	net_white = 0
+	net_black = 0
+	
+	# count up the occurances of each
 	for each_result in roll_results_list:
 
 		if each_result.equals("success"):
@@ -143,7 +154,10 @@ def calc_result(roll_results_list):
 		elif each_result.equals("black"):
 			total_black += 1
 
-			
+	# cancel out what can be cancelled
+	# if success > fail create net success and assign success - fail
+	# else create net fail and assign fail - success or 0
+	# and so on (although the logic might be more interesting when things count as other things)
 
 			
 
