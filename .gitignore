@@ -57,3 +57,5 @@ target/
 
 # Author Specific
 *.DS_Store
+*.sublime-workspace
+*.sublime-project
